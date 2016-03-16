@@ -90,8 +90,6 @@ footer {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-
-  height: 100%;
 }
 
 .lake-background {
@@ -100,10 +98,22 @@ footer {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-
-  height: 100%;
 }
 
+
+// Form styles
+
+.form-inputs {
+
+	label {
+		margin: 3px;
+	}
+
+	input {
+		margin: 3px;
+		width: auto;
+	}
+}
 
 // footer styles
 
