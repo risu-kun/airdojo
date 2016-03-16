@@ -1,12 +1,54 @@
 @import url(https://fonts.googleapis.com/css?family=Julee);
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,300italic);
 
+// variables
+$punch: #dc3246;
+$brick-red: #c22c3e;
+
+// General styles
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Raleway', sans-serif;
+}
+
+.btn-primary {
+	background-color: $punch;
+	border-color: $punch;
+	&:hover {
+		background-color: $brick-red;
+		border-color: $brick-red;
+	}
+}
+
+// Navbar styles
 .navbar-default {
   	border-radius:0;
   	font-family: 'Raleway', sans-serif;
-  	
+  	margin: 0;
+
+  	h1, h2 {
+  		margin: 0;
+  	}
+
   	.navbar-brand {
   		font-family: 'Julee', cursive;
   		font-size: 40px;
   	}
+}
+
+// Hero styles
+.hero {
+	background: url('hero.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	height: 533px;
+	margin-top: 0;
+}
+
+.frosty {
+	background: rgba(0,0,0,0.5);
+	color: white;
+	margin-top: 30px;
+	padding: 10px;
 }
