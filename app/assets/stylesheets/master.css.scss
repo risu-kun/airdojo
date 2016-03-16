@@ -10,13 +10,18 @@ $brick-red: #c22c3e;
 $mexican-red: #9C2332;
 $cherrywood: #5C151E;
 
+
 // General styles
-h1, h2, h3, h4, h5, h6, body {
-	font-family: 'Raleway', sans-serif;
+.alert {
+	margin: 0;
 }
 
 body, html {
 	height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, body {
+	font-family: 'Raleway', sans-serif;
 }
 
 .btn-primary {
@@ -64,12 +69,6 @@ body, html {
 
 // Body styles
 
-.body-container {
-	h2 {
-		margin: 0;
-	}
-}
-
 .mountain-background {
 	background: url('mountains.jpg') no-repeat center center fixed;
 	-webkit-background-size: cover;
@@ -89,3 +88,18 @@ body, html {
 
   height: 100%;
 }
+
+.site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  h2 {
+		margin: 0;
+	}
+}
+
+.site-content {
+  flex: 1;
+}
+// footer styles
+
