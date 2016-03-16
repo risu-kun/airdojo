@@ -40,7 +40,7 @@ footer {
 .site {
   display: flex;
   font-family: 'Raleway', sans-serif;
-  min-height: 100vh;
+  height: 100%;
   flex-direction: column;
 }
 
@@ -116,4 +116,7 @@ footer {
 }
 
 // footer styles
-
+footer {
+	background-color: rgba(36,32,33,0.9);
+	height: 60px;
+}
