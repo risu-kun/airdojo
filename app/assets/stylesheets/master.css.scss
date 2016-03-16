@@ -15,6 +15,10 @@ h1, h2, h3, h4, h5, h6, body {
 	font-family: 'Raleway', sans-serif;
 }
 
+body, html {
+	height: 100%;
+}
+
 .btn-primary {
 	background-color: $punch;
 	border-color: $punch;
@@ -55,6 +59,33 @@ h1, h2, h3, h4, h5, h6, body {
 	background: rgba(0,0,0,0.5);
 	border-radius: 1em;
 	color: white;
-	margin-top: 100px;
 	padding: 10px;
+}
+
+// Body styles
+
+.body-container {
+	h2 {
+		margin: 0;
+	}
+}
+
+.mountain-background {
+	background: url('mountains.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  height: 100%;
+}
+
+.lake-background {
+	background: url('lake-mountains.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  height: 100%;
 }
