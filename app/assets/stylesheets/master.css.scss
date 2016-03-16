@@ -20,10 +20,6 @@ body, html {
 	height: 100%;
 }
 
-h1, h2, h3, h4, h5, h6, body {
-	font-family: 'Raleway', sans-serif;
-}
-
 .btn-primary {
 	background-color: $punch;
 	border-color: $punch;
@@ -31,6 +27,25 @@ h1, h2, h3, h4, h5, h6, body {
 		background-color: $brick-red;
 		border-color: $brick-red;
 	}
+}
+
+.clr {
+  clear:both;
+}
+
+footer {
+	font-family: 'Raleway', sans-serif;
+}
+
+.site {
+  display: flex;
+  font-family: 'Raleway', sans-serif;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.site-content {
+  flex: 1;
 }
 
 // Navbar styles
@@ -89,17 +104,6 @@ h1, h2, h3, h4, h5, h6, body {
   height: 100%;
 }
 
-.site {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-  h2 {
-		margin: 0;
-	}
-}
 
-.site-content {
-  flex: 1;
-}
 // footer styles
 
