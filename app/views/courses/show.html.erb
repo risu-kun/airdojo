@@ -1,11 +1,23 @@
-<main class="site-content mountain-background">
+<main class="site-content course-detail-page-wrapper col-xs-10 col-xs-offset-1">
 
   <br />
   <br />
 
-	<div class="frosty col-xs-10 col-xs-offset-1">
-		<h1 class="text-center">Hiiiii</h1>
+	<h1><%= @course.title %></h1>
+	<br />
+
+	<div class="col-xs-12 col-sm-4 text-center">
+		Cost:  <span class="label label-default"><%= number_to_currency @course.cost %></span>
+
+		<% if current_user && current_user == @course.user %>
+      <br />
+      <br />
+      <%= link_to 'Administer', instructor_course_path(@course), class: 'btn btn-primary btn-large' %>
+    <% end %>
+
 	</div>
-
+	<div class="col-xs-12 col-sm-4">
+		<%= @course.description %>
+	</div>
 
 </main>
