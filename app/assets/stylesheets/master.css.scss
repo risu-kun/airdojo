@@ -131,8 +131,9 @@ input.string, input.password, input.numeric, textarea {
 }
 
 .field_with_errors {
+	border-radius: 3px;
   color: $amaranth;
-  border-radius: 3px;
+  font-weight: bolder;
   input {
   	box-shadow: 0px 0px 7px $amaranth;
   }
