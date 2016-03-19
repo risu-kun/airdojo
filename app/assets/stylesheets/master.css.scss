@@ -14,7 +14,6 @@ $cherrywood: #5C151E;
 // General styles
 a {
 	color: $punch;
-	font-weight: 1.5;
 	&:hover, &:focus {
 		color: $punch;
 	}
@@ -156,4 +155,8 @@ footer {
 	color: #fff;
 	background-color: rgba(36,32,33,0.9);
 	height: 60px;
+	.container {
+		padding: 10px;
+	}
+	
 }
