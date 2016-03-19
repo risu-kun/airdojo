@@ -23,7 +23,7 @@ body, html {
 .btn-primary {
 	background-color: $punch;
 	border-color: $punch;
-	&:hover, &:click {
+	&:hover, &:focus, &:active:hover {
 		background-color: $brick-red;
 		border-color: $brick-red;
 	}
