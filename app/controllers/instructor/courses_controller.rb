@@ -5,4 +5,6 @@ class Instructor::CoursesController < ApplicationController
 		@course = Course.new
 	end
 
+	def create
+	end
 end

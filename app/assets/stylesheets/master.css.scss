@@ -118,24 +118,29 @@ footer {
 
 // Form styles
 
+label {
+	margin: 3px;
+}
+
 input.string, input.password, input.numeric, textarea {
 		background: rgba(0,0,0,0.5);
 		border: 1px #ccc;
 		border-radius: 0.2em;
+		margin: 3px;
 		padding: 3px;
 }
 
-.form-inputs {
+// .form-inputs {
 
-	label {
-		margin: 3px;
-	}
+// 	label {
+// 		margin: 3px;
+// 	}
 
-	input {
-		margin: 3px;
-		width: auto;
-	}
-}
+// 	input {
+// 		margin: 3px;
+// 		width: auto;
+// 	}
+// }
 
 // footer styles
 footer {
