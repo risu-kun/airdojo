@@ -130,6 +130,14 @@ input.string, input.password, input.numeric, textarea {
 		padding: 3px;
 }
 
+.field_with_errors {
+  color: $amaranth;
+  border-radius: 3px;
+  input {
+  	box-shadow: 0px 0px 7px $amaranth;
+  }
+}
+
 // .form-inputs {
 
 // 	label {
