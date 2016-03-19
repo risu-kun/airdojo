@@ -23,9 +23,14 @@ body, html {
 .btn-primary {
 	background-color: $punch;
 	border-color: $punch;
-	&:hover {
+	&:hover, &:click {
 		background-color: $brick-red;
 		border-color: $brick-red;
+	}
+
+	&:visited {
+		background-color: $punch;
+		border-color: $punch;
 	}
 }
 
