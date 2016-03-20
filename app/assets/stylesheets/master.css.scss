@@ -46,7 +46,14 @@ body, html {
 	color: white;
 	padding: 10px;
 
-	
+	input.string, input.password, input.numeric, textarea {
+		background: rgba(0,0,0,0.5);
+		border: 1px #ccc;
+		border-radius: 0.2em;
+		color: inherit;
+		margin: 3px;
+		padding: 3px;
+	}
 }
 
 h1,h2,h3,h4,h5 {
@@ -124,13 +131,7 @@ label {
 	margin: 3px;
 }
 
-input.string, input.password, input.numeric, textarea {
-		background: rgba(0,0,0,0.5);
-		border: 1px #ccc;
-		border-radius: 0.2em;
-		margin: 3px;
-		padding: 3px;
-}
+
 
 .field_with_errors {
 	border-radius: 3px;
