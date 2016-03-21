@@ -48,7 +48,7 @@ body, html {
 	margin-top: 20px;	
 	padding: 10px;
 
-	input.string, input.password, input.numeric, textarea {
+	input.string, input.password, input.numeric, input.file, textarea {
 		background: rgba(0,0,0,0.5);
 		border: 1px #ccc;
 		border-radius: 0.2em;
