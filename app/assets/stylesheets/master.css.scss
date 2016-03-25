@@ -23,10 +23,6 @@ a {
 	margin: 0;
 }
 
-body, html {
-	height: 100%;
-}
-
 .btn-primary {
 	background-color: $punch;
 	border-color: $punch;
@@ -70,9 +66,9 @@ h1,h2,h3,h4,h5 {
 
 .site {
   display: flex;
-  font-family: 'Raleway', sans-serif;
-  height: 100%;
   flex-direction: column;
+  font-family: 'Raleway', sans-serif;
+  min-height: 100vh;  
 }
 
 .site-content {
