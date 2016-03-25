@@ -18,6 +18,12 @@
       <h4><span class="label label-info">You are enrolled!</span></h4>
     <% else %>
       <%= link_to 'Enroll', course_enrollments_path(@course), class: 'btn btn-primary', method: :post %>
+      <%= form_tag course_enrollments_path(@course) do %>
+        <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+                data-description="A month's subscription"
+                data-amount="500"></script>
+      <% end %>
     <% end %>
   </div>
 
