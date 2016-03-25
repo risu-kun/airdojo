@@ -1,4 +1,4 @@
-<main class="site-content course-detail-page-wrapper col-xs-10 col-xs-offset-1">
+<main class="site-content course-detail-page-wrapper">
 
 	<h1><%= @course.title %></h1>
   <%= image_tag @course.image, class: 'img-responsive' %>
@@ -20,16 +20,18 @@
 
 	<div class="col-xs-12">
     <% @course.sections.each do |section| %>
-      <div class="section">
-      	<hr />
-        <h2><%= section.title %></h2>
-        <hr />
+      <br />
+      <div class="section ">
+        <h3><%= section.title %></h3>
         <% section.lessons.each do |lesson| %>
-          <div class="lesson">
-          	<h3><%= link_to lesson.title,lesson_path(lesson) %></h3>
-	            <%= lesson.subtitle %>
+          <div class="col-xs-12 col-sm-6">
+            <div class="lesson text-center">
+              <h4><%= link_to lesson.title,lesson_path(lesson) %></h4>
+  	         <%= lesson.subtitle %>
+            </div>
           </div>
         <% end %>
+        <br class="clr" />
       </div>
     <% end %>
   </div>

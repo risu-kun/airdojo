@@ -1,5 +1,6 @@
 <main class="site-content course-detail-page-wrapper col-xs-10 col-xs-offset-1">
 
+
 	<h1><%= current_course.title %></h1>
 	<hr />	
 
@@ -10,20 +11,20 @@
 	<br />
 
 	<h2>Sections</h2>
-	<ul>
 		<% current_course.sections.each do |section| %>
-			<li>
+			<div class="section">
 				<%= section.title %>
 				<%= link_to 'New Lesson', new_instructor_section_lesson_path(section), class: 'btn btn-primary btn-xs pull-right' %>
-				<ul>
-					<% section.lessons.each do |lesson| %>
-						<li>
-							<b><%= lesson.title %></b>
-							-
-							<%= lesson.subtitle %>
-						</li>
-					<% end %>
-				</ul>
+	
+				<% section.lessons.each do |lesson| %>
+					<div class="lesson">
+						<b><%= lesson.title %></b>
+						-
+						<%= lesson.subtitle %>
+					</div>			
+				<% end %>
+			</div>
+
 				<br class='clr' />
 			</li>
 		<% end %>
