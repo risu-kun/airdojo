@@ -1,7 +1,14 @@
 <main class="site-content course-detail-page-wrapper col-xs-10 col-xs-offset-1">
 
 	<h1><%= current_lesson.title %></h1>
-	<p><%= current_lesson.subtitle %></p>
+	<p class="pull-right"><%= current_lesson.subtitle %></p>
+  <% if current_lesson.next_lesson.present? %>
+    <%= link_to lesson_path(current_lesson.next_lesson), class: 'btn btn-primary pull-right' do %>
+      Next lesson &nbsp;<span class="glyphicon glyphicon-chevron-right"></span>
+    <% end %>
+  <% end %>
+
+  <br class="clr" />
 	<hr />
 
   <% if current_lesson.video.to_s.present? %>
@@ -14,5 +21,6 @@
     </video>
   <% end %>
 	
+
 
 </main>
