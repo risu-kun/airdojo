@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   devise_for :users
   root 'static_pages#index'
+  get 'about', to: 'static_pages#about'
+  get 'about_risse', to: 'static_pages#about_risse'
 
   resource :dashboard, only: :show
 
