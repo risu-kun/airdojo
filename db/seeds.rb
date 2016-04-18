@@ -4,13 +4,7 @@ Course.create!([
   {title: "Iaido", description: "Iaido is a sword art that develops balance, posture, appreciation of center line and zanshin (focus). The art utilizes practice metal blades and consists of a series of kata that are practiced independently.", cost: "500.0", user_id: 1, image: "iaido7.jpg"},
   {title: "Beginners' Yoga", description: "New to yoga? Start here with beginner yoga sequences, tutorials on foundational yoga poses, and answers to your questions on all the yoga basics.", cost: "0.0", user_id: 1, image: "warrior-pose.png"}
 ])
-Enrollment.create!([
-  {user_id: 2, course_id: 3},
-  {user_id: 2, course_id: 7},
-  {user_id: 2, course_id: 5},
-  {user_id: 1, course_id: 7},
-  {user_id: 1, course_id: 3}
-])
+
 Lesson.create!([
   {title: "Forms 17 - 20", subtitle: "Snake Creeps Through Grass, Rooster Stands On One Leg (right), Fair Lady Works the Shuttles (right & left), Needle at the Sea Bottom, Fan through the Back", section_id: 2, video: "small.mp4", row_order: 3584},
   {title: "How to breathe", subtitle: "This lesson will focus on mindful breath, and how it will carry you through your T'ai Chi journey.", section_id: 1, video: nil, row_order: -7864319},
@@ -23,5 +17,4 @@ Lesson.create!([
 Section.create!([
   {title: "24-Form", course_id: 3, row_order: -7340031},
   {title: "Basics", course_id: 3, row_order: -7864319},
-  {title: "", course_id: 3, row_order: 524288}
 ])
