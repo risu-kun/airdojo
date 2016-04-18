@@ -6,15 +6,15 @@ Course.create!([
 ])
 
 Lesson.create!([
-  {title: "Forms 17 - 20", subtitle: "Snake Creeps Through Grass, Rooster Stands On One Leg (right), Fair Lady Works the Shuttles (right & left), Needle at the Sea Bottom, Fan through the Back", section_id: 2, video: "small.mp4", row_order: 3584},
-  {title: "How to breathe", subtitle: "This lesson will focus on mindful breath, and how it will carry you through your T'ai Chi journey.", section_id: 1, video: nil, row_order: -7864319},
-  {title: "Brief history of T'ai Chi", subtitle: "From a modern historical perspective, when tracing t'ai chi ch'uan's formative influences to Taoist and Buddhist monasteries, there seems little more to go on than legendary tales.", section_id: 1, video: nil, row_order: -8126463},
-  {title: "Forms 5-8", subtitle: "Hand Strums the Lute, Step Back and Repulse Monkey, Grasp the Sparrows’s Tail (left), Grasp the Sparrows’s Tail (right),", section_id: 2, video: nil, row_order: -8384511},
-  {title: "Forms 9 - 12", subtitle: "Single Whip, Cloud Hands (3x), Single Whip, High Pat on the Horse", section_id: 2, video: "SampleVideo_640x360_1mb.mp4", row_order: -8382463},
-  {title: "Forms 13 - 16", subtitle: "Heel Kick (right), Strike Tiger’s Ears, Heel Kick (left), Snake Creeps Through Grass, Rooster Stands On One Leg(left)", section_id: 2, video: "small.mp4", row_order: -8381439},
-  {title: "Forms 1 - 4", subtitle: "Commencement, Parting the Wild Horse’s Mane, White Crane Spreads its Wings, Brush Knee", section_id: 2, video: nil, row_order: -8386559}
+  {title: "Forms 17 - 20", subtitle: "Snake Creeps Through Grass, Rooster Stands On One Leg (right), Fair Lady Works the Shuttles (right & left), Needle at the Sea Bottom, Fan through the Back", section_id: 2, video: "small.mp4"},
+  {title: "How to breathe", subtitle: "This lesson will focus on mindful breath, and how it will carry you through your T'ai Chi journey.", section_id: 1, video: nil,},
+  {title: "Brief history of T'ai Chi", subtitle: "From a modern historical perspective, when tracing t'ai chi ch'uan's formative influences to Taoist and Buddhist monasteries, there seems little more to go on than legendary tales.", section_id: 1 ],
+  {title: "Forms 5-8", subtitle: "Hand Strums the Lute, Step Back and Repulse Monkey, Grasp the Sparrows’s Tail (left), Grasp the Sparrows’s Tail (right),", section_id: 2},
+  {title: "Forms 9 - 12", subtitle: "Single Whip, Cloud Hands (3x), Single Whip, High Pat on the Horse", section_id: 2, video: "SampleVideo_640x360_1mb.mp4"},
+  {title: "Forms 13 - 16", subtitle: "Heel Kick (right), Strike Tiger’s Ears, Heel Kick (left), Snake Creeps Through Grass, Rooster Stands On One Leg(left)", section_id: 2, video: "small.mp4"},
+  {title: "Forms 1 - 4", subtitle: "Commencement, Parting the Wild Horse’s Mane, White Crane Spreads its Wings, Brush Knee", section_id: 2n}
 ])
 Section.create!([
-  {title: "24-Form", course_id: 3, row_order: -7340031},
-  {title: "Basics", course_id: 3, row_order: -7864319},
+  {title: "24-Form", course_id: 1},
+  {title: "Basics", course_id: 1},
 ])
